@@ -20,7 +20,7 @@ A website for tech blogger. Bloggers are able to create an account, post content
 npm install connect-session-sequelize, dotenv, express, express-handlebars, express-session, mysql2, sequelize
 
 ## Usage
-git clone or download files. "npm install"then "npm run start"
+git clone or download files. "npm install" then "npm run start"
 
 ## License
 
