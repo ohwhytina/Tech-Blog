@@ -1,0 +1,26 @@
+
+{{> secondary-header post.secondary-header}}
+
+<!-- start of main section -->
+
+<main class="p-4">
+    <form id="new-post-form" class="card">
+      <h3 class="card-header bg-success text-center">Create New Post</h3>
+      <label class="form-label p-2" for="title">Title</label>
+      <textarea name="title" type="text" autofocus="true" class="form-input" /></textarea><br />
+  
+      <label class="form-label p-2" for="content">Content</label>
+      <textarea name="content" type="text" autofocus="true" class="form-input-create-new-post" /></textarea><br />
+  
+      <section class="text-center pb-3">
+      <a href="/dashboard" type="submit" class="btn btn-primary">POST IT!</a>
+      </section>
+    </form>
+</main>
+
+
+</body>
+
+<!-- end of main section -->
+
+<script src="/javascript/add-post.js"></script>

@@ -1,0 +1,18 @@
+{{> secondary-header post.secondary-header}}
+
+<section class="text-center pt-3">
+    <a href="/dashboard/new" type="submit" class="btn btn-dark btn-lg">Create a new post</a>
+</section>
+
+<main>
+{{#if posts.length}}
+<section class="card-body">
+    {{#each posts as |post|}}
+      {{> user-posts post}}
+    {{/each}}
+</section>
+{{/if}}
+</main>
+
+
+<script src="/javascript/add-post.js"></script>

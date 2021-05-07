@@ -1,0 +1,21 @@
+{{> secondary-header post.secondary-header}}
+
+<main class="p-4">
+    <form id="edit-post-form" class="card">
+      <h3 class="card-header bg-success text-center">Edit Post</h3>
+      <label class="p-2" for="title">Title</label>
+      <textarea name="title" type="text" value="{{post.title}}" autofocus="true" class="form-input" />{{post.title}}</textarea>
+      
+      <label class="p-2" for="content">Content</label>
+      <textarea name="content" type="text" value="{{post.content}}" autofocus="true"/>{{post.content}}</textarea>
+          
+      <section class="p-3 d-flex justify-content-between">
+        <a href="/dashboard" type="button" class="delete-post-btn btn btn-danger">Delete Post</a>
+        <a href="/dashboard" type="submit" class="edit-post-btn btn btn-primary">Update Post</a>
+      </section>         
+    </form>
+</main>
+
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

@@ -1,0 +1,12 @@
+{{> main-header post.main-header}}
+
+<main>
+    {{#if posts.length}}
+<section class="card-body">
+    {{#each posts as |post|}}
+      {{> post-info post}}
+    {{/each}}
+</section>
+{{/if}}
+</main>
+
